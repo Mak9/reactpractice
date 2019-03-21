@@ -11,9 +11,11 @@ import {
   Media
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import CommentForm from "./CommentFormComponent"
 
 function RenderDish({ dish }) {
   return (
+    
     <Card>
       <CardImg top src={dish.image} alt={dish.name} />
       <CardBody>
@@ -51,6 +53,7 @@ function RenderComments({ comments }) {
         <Media list className="list-unstyled">
           {list}
         </Media>
+        <CommentForm/>
       </div>
     );
   } else return <div />;
