@@ -130,7 +130,6 @@ class CommentForm extends Component {
 
 function RenderDish({ dish }) {
   return (
-    
     <Card>
       <CardImg top src={dish.image} alt={dish.name} />
       <CardBody>
@@ -168,7 +167,7 @@ function RenderComments({ comments }) {
         <Media list className="list-unstyled">
           {list}
         </Media>
-        <CommentForm/>
+        <CommentForm />
       </div>
     );
   } else return <div />;
@@ -202,11 +201,9 @@ const DishDetail = props => {
           <div className="col-12 col-md-5 m-1">
             <RenderComments comments={props.comments} />
           </div>
-          </div>
-        
+        </div>
       </div>
     );
-  
 };
 
 export default DishDetail;
