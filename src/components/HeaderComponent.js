@@ -97,6 +97,7 @@ class Header extends Component {
                         </Form>
                     </ModalBody>
                 </Modal>
+                
             </div>
         );
     }
